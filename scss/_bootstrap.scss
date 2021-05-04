@@ -1,0 +1,65 @@
+
+/*----------NAVBAR----------------*/
+.navbar {
+    max-width: 1000px;
+    margin: auto;
+}
+
+.navbar-collapse {
+   
+    justify-content: end;
+
+
+}
+
+/*-----each----*/
+@each $bg-color in red black grey {
+
+    .bg-#{$bg-color} {
+        background-color: #{$bg-color};
+    }
+    
+}
+
+/*--------------THUMBNAIL--------*/
+.img-thumbnail {
+    background-color: transparent;
+    border: none;
+}
+
+
+/*-----------------Carousel--------------------*/
+
+.carousel {
+    margin: auto;
+    margin-top: 70px;
+}
+
+/*----------------alerta bootstrap-----------*/
+.alert {
+
+    margin-top: 1rem;
+ }
+
+
+ /*----buble----*/
+ @for $margenes from 1 through 5 {
+    .alert--#{$margenes} {margin-top: 1rem*$margenes;}
+}
+
+
+/*------map--------*/
+
+$bgcolor: (
+    color1: #ea9fde,
+    color2: rgb(159, 224, 179),
+    color3: red
+
+);
+
+@each $bg, $color in $bgcolor {
+    .alert--#{$bg} {
+        background-color: $color;
+    }
+    
+}

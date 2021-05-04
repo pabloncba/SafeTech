@@ -1,0 +1,48 @@
+/* Footer */
+
+@mixin footer__img { 
+    display: inline-block;
+    width: 1.5625rem;
+    text-align: right;
+    filter: grayscale( 100%);
+    transition: 0.5s;
+    
+}
+
+.footer{
+	border-radius: 10px;
+    
+    background-color: #40394a;
+    color: white;
+    padding: 0.9375rem 0px 0.9375rem 0px; 
+    width: 100%;
+	display: inline-flex;
+	justify-content: space-between;
+    grid-area: footer;
+
+	div{
+
+		display: inline-block;
+		margin: 0px 1.25rem 0px 0.625rem;
+		
+
+	}
+}
+
+.footer__text {
+	width: 15.625rem;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: small;
+    display: inline-block;
+    text-align: left;
+}
+
+
+.footer__imgredes {
+	@include footer__img;
+
+	&:hover {
+		filter: grayscale(0%);
+
+	}
+}
