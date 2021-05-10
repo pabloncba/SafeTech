@@ -1,14 +1,14 @@
 {
-  "name": "safetechscss",
+  "name": "safetech",
   "version": "1.0.0",
-  "description": "",
+  "description": "Proyecto para curso de Desarrollo Web - CoderHouse",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build-css": "node-sass --include-path scss scss/styleSCSS.scss css/styleCSS.css",
      "watch-css": "nodemon -e scss -x \"npm run build-css\""
      },
-  "author": "",
+  "author": "Pablo Norry",
   "license": "ISC",
   "devDependencies": {
     "node-sass": "^5.0.0",
