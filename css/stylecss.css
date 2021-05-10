@@ -286,7 +286,8 @@ aside {
 /*-----------------Carousel--------------------*/
 .carousel {
   margin: auto;
-  margin-top: 70px; }
+  margin-top: 70px;
+  max-height: 600px; }
 
 /*----------------alerta bootstrap-----------*/
 .alert {
