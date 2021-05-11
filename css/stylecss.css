@@ -266,7 +266,7 @@ aside {
   margin: auto; }
 
 .navbar-collapse {
-  justify-content: end; }
+  justify-content: end !important; }
 
 /*-----each----*/
 .bg-red {
@@ -289,7 +289,7 @@ aside {
   margin-top: 70px; }
 
 .carousel-inner {
-  max-height: 600px; }
+  max-height: 91vh; }
 
 /*----------------alerta bootstrap-----------*/
 .alert {
