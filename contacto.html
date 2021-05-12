@@ -89,57 +89,33 @@
 
             <form class="form" action="#" method="GET" enctype="multipart/form-data"> <!--Iniciamos formulario-->
                  <!--campo del formulario-->
-                    <div class="form__div">
-                        <label for="nombre">Nombre:</label>
-                        <input type="text" id="nombre" name="nombre" required>    
-
-                        <label for="apellido">Apellido:</label>
-                        <input type="text" id="apellido" name="apellido">    
-                    </div>
-                    
-
-                    <div class="form__div">
-                
-                        <label class="form__label"  for="mail">E-mail:</label>
-                        <input type="email" id="mail" name="mail" required>  <!--required para que sea un campo obligatori-->
-                         
-                                         
-                        <label>Tel.:</label>
-                        <input type="tel" id="tel" name="tel">   
-                    </div>
-                  
-                    
-                    <div  class="form__div">
-                        <label for="form__label">Seleccione area con la que desea contactar:</label>
+                   
                        
-                            <select id="menudes" required>
-                                <option disabled selected value> <!--opcion por inicial en blanco-->
-                                <option value="adm">Administración</option>
+                        <input class="form__input" type="text" id="nombre" name="nombre" placeholder="NOMBRE" required>    
+
+                        <input class="form__input" type="text" id="apellido" name="apellido" placeholder="APELLIDO" required>
+                                   
+                        <input class="form__input" type="email" id="mail" name="mail" placeholder="E-MAIL" required>  <!--required para que sea un campo obligatori-->
+                                        
+                        <input class="form__input" type="tel" id="tel" name="tel" placeholder="TELEFONO">   
+                            
+                                       
+                                              
+                            <select class="form__select" required>
+                                <option disabled selected value>Seleccione el Area a la que desee enviar la consulta <!--opcion por inicial en blanco-->
+                                <option value="adm">Administración
                                 <option value="ventas">Ventas
                                 <option value="Soporte">Soporte Técnico   
                         </select>
                         
-                    </div> 
+                   
+                        <textarea class="form__textarea" id="consulta" name="consulta" rows="10" cols="50" placeholder="ESCRIBA AQUI SU CONSULTA" required></textarea>
                        
-                    <div  class="form__div">
-                        <label>Selecione el/los servicios por los que desea consultar:</label>
-                            <label><input type="checkbox" id="alarma_monitoreo">Alarmas y monitoreos</label>
-                            <label><input type="checkbox" id="CCTV">Camaras/CCTV</label>
-                            <label><input type="checkbox" id="domotica">Domotica</label>
-                            <label><input type="checkbox" id="Electricidad">Electricidad</label>
-                          
-                     </div>
                    
-                   
-                    <div  class="form__textarea">
-                        <label class="form__label" for="consulta">Consulta:</label>
-                        <textarea  id="consulta" name="consulta" rows="10" cols="50" required></textarea>
-                    </div>     
-                    <div class="form__input">
-                        <input type="submit" value="Enviar formulario"> <!--boton para enviar formulario-->
-                        <input type="reset" value="Resetear"> <!--boton para resetea formulario-->
+                        <input class="form__input" type="submit" value="Enviar formulario"> <!--boton para enviar formulario-->
+                        <input class="form__input" type="reset" value="Resetear"> <!--boton para resetea formulario-->
                         
-                     </div>   
+                     
                      
                
             </form>
