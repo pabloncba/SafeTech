@@ -96,7 +96,6 @@ main {
 form {
   display: flex;
   flex-direction: column;
-  margin: auto;
   width: 40vw;
   box-sizing: border-box; }
 
@@ -247,8 +246,10 @@ aside {
     flex-direction: column; }
   aside img {
     max-height: 180px; }
-  .img-thumbnail {
-    height: 100%; } }
+  /*.img-thumbnail {
+           
+        height: 100%;
+    }*/ }
 
 @media (max-width: 600px) {
   body {
@@ -273,7 +274,10 @@ aside {
   aside {
     flex-direction: column; }
   .footer__imgredes {
-    width: 1.125rem; } }
+    width: 1.125rem; }
+  iframe {
+    max-width: 250px;
+    /*para que no desborde*/ } }
 
 /*------------Bootstrap-------------------*/
 /*----------NAVBAR----------------*/

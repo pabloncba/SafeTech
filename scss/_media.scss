@@ -32,10 +32,10 @@
         max-height: 180px;
     }
     
-    .img-thumbnail {
+    /*.img-thumbnail {
            
         height: 100%;
-    }
+    }*/
    
 }
 
@@ -90,5 +90,9 @@
 
         width: 1.125rem;
 
+    }
+
+    iframe {
+        max-width: 250px; /*para que no desborde*/
     }
 }
