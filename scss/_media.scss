@@ -61,7 +61,7 @@
             object-fit: contain;
             height: auto;
             margin: 5px;
-            height: auto;
+            max-width: 100px;
             
         }
 
@@ -90,6 +90,12 @@
 
         width: 1.125rem;
 
+    }
+
+    aside img {
+      
+       
+        max-height: 180px;
     }
 
     iframe {

@@ -193,6 +193,9 @@ aside {
   margin: 10px;
   box-shadow: 2px 2px 5px #999;
   text-align: left; }
+  .aside__article p {
+    text-align: justify;
+    padding: 10px; }
 
 .aside__article--transition {
   transition: 1s linear; }
@@ -262,7 +265,7 @@ aside {
     object-fit: contain;
     height: auto;
     margin: 5px;
-    height: auto; }
+    max-width: 100px; }
   form {
     width: 60vw; } }
 
@@ -275,6 +278,8 @@ aside {
     flex-direction: column; }
   .footer__imgredes {
     width: 1.125rem; }
+  aside img {
+    max-height: 180px; }
   iframe {
     max-width: 250px;
     /*para que no desborde*/ } }

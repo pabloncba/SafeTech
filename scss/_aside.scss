@@ -53,6 +53,13 @@ aside {
     // border: black solid 1px;
     box-shadow: 2px 2px 5px #999;
     text-align: left;
+
+    p{
+        
+        text-align: justify;
+        padding: 10px;
+    }
+    
 }
 
 .aside__article--transition{
