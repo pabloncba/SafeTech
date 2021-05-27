@@ -7,7 +7,7 @@
 
 .navbar-collapse {
    
-    justify-content: end !important;
+    justify-content: flex-end;
 
 
 }
@@ -44,10 +44,11 @@
 .alert {
 
     margin-top: 1rem;
+    text-align: center;
  }
 
 
- /*----buble----*/
+ /*----bucle----*/
  @for $margenes from 1 through 5 {
     .alert--#{$margenes} {margin-top: 1rem*$margenes;}
 }

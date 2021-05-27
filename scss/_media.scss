@@ -32,11 +32,9 @@
         max-height: 180px;
     }
     
-    /*.img-thumbnail {
-           
-        height: 100%;
-    }*/
-   
+   .aside__contacto {
+       display: none;
+   }
 }
 
 
@@ -70,6 +68,9 @@
         width: 60vw;
     }
 
+    .barraConTelefono__span {
+        font-size: 16px;
+    }
        
 }
 
@@ -101,4 +102,8 @@
     iframe {
         max-width: 250px; /*para que no desborde*/
     }
+
+    .barraConTelefono__span  {
+        font-size: 14px;
+     }
 }

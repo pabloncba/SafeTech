@@ -19,6 +19,7 @@ body {
   justify-items: stretch; }
 
 /*-----------------Header-------------------*/
+/*heDER*/
 .header {
   border-radius: 10px;
   background-image: linear-gradient(to left, #afafaa 15%, #52504d 25%, #000000 50%, #797a83 75%, #3b3b3b 100%);
@@ -90,7 +91,49 @@ main {
   font-weight: 800; }
 
 .main__titulos--h3 {
-  font-weight: 600; }
+  font-weight: 600;
+  margin: 18px; }
+
+.barraConTelefono {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  margin: 10px 0 10px 0; }
+
+.barraConTelefono__span {
+  background-color: #ddd;
+  font-size: 18px;
+  border: 1px black solid;
+  text-align: center;
+  padding: 12px;
+  box-shadow: 6px 6px 4px 6px #888; }
+
+blockquote {
+  margin: 40px;
+  display: flex;
+  flex-direction: column; }
+
+.blockquote__testimonial {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+
+.blockquote__testimonial--img {
+  width: 80px;
+  height: 80px;
+  border-radius: 100%;
+  border: 1px solid black; }
+
+.index__publicidad {
+  display: flex;
+  width: 100%;
+  height: 320px;
+  background-image: url(/img/seguridad-en-casa.jpg);
+  flex-direction: column;
+  justify-content: flex-end;
+  background-position: center;
+  background-size: contain;
+  opacity: 0.5; }
 
 /*-----------------Formulario------------------*/
 form {
@@ -180,11 +223,6 @@ aside {
 .ubicacion {
   background-image: url("img/ubicacion.jpg"); }
 
-.aside__img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover; }
-
 .aside__article {
   width: auto;
   background-color: #d5cccc;
@@ -197,10 +235,8 @@ aside {
     text-align: justify;
     padding: 10px; }
 
-.aside__article--transition {
-  transition: 1s linear; }
-  .aside__article--transition:hover {
-    transform: scale(0.5); }
+.aside__contacto {
+  height: 135vh; }
 
 /*-----------------Footer--------------------------*/
 /* Footer */
@@ -249,10 +285,8 @@ aside {
     flex-direction: column; }
   aside img {
     max-height: 180px; }
-  /*.img-thumbnail {
-           
-        height: 100%;
-    }*/ }
+  .aside__contacto {
+    display: none; } }
 
 @media (max-width: 600px) {
   body {
@@ -267,7 +301,9 @@ aside {
     margin: 5px;
     max-width: 100px; }
   form {
-    width: 60vw; } }
+    width: 60vw; }
+  .barraConTelefono__span {
+    font-size: 16px; } }
 
 @media (max-width: 300px) {
   .carousel {
@@ -282,7 +318,9 @@ aside {
     max-height: 180px; }
   iframe {
     max-width: 250px;
-    /*para que no desborde*/ } }
+    /*para que no desborde*/ }
+  .barraConTelefono__span {
+    font-size: 14px; } }
 
 /*------------Bootstrap-------------------*/
 /*----------NAVBAR----------------*/
@@ -291,7 +329,7 @@ aside {
   margin: auto; }
 
 .navbar-collapse {
-  justify-content: end !important; }
+  justify-content: flex-end; }
 
 /*-----each----*/
 .bg-red {
@@ -318,9 +356,10 @@ aside {
 
 /*----------------alerta bootstrap-----------*/
 .alert {
-  margin-top: 1rem; }
+  margin-top: 1rem;
+  text-align: center; }
 
-/*----buble----*/
+/*----bucle----*/
 .alert--1 {
   margin-top: 1rem; }
 

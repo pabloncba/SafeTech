@@ -21,10 +21,7 @@ aside {
             text-decoration: underline;
         }
 
-        // p {
-        //     text-emphasis: ;
-        // }
-    
+        
     
 }
 
@@ -34,14 +31,6 @@ aside {
            url('img/#{$imgAside}.jpg');
      }
  }
-
-.aside__img {
-  
-
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-}
 
 
 .aside__article {
@@ -58,14 +47,12 @@ aside {
         
         text-align: justify;
         padding: 10px;
-    }
+    }}
+
+.aside__contacto{
+    height: 135vh;
+}
     
-}
 
-.aside__article--transition{
-    transition: 1s linear;
 
-    &:hover {
-        transform: scale(.5);
-    }
-}
+

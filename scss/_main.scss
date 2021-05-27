@@ -22,6 +22,59 @@ main {
 .main__titulos--h3 {
    @extend .main__titulos;
    font-weight: 600;
+   margin: 18px;
 
 }
+
+.barraConTelefono {
+
+   display: flex;
+   width: 100%;
+   justify-content: center;
+   margin: 10px 0 10px 0;
+
+}
+
+.barraConTelefono__span {
+   background-color: #ddd;
+   font-size: 18px;
+   border: 1px black solid;
+   text-align: center;
+   padding: 12px;
+   box-shadow: 6px 6px 4px 6px #888;
+    
+}
+
+blockquote {
+   margin: 40px;
+   display: flex;
+   flex-direction: column;
+}
+
+.blockquote__testimonial {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+
+.blockquote__testimonial--img {
+   width: 80px;
+   height: 80px;
+   border-radius: 100%;
+   border: 1px solid black;
+}
+
+.index__publicidad {
+   display: flex;
+   width: 100%;
+   height: 320px;
+   background-image: url(/img/seguridad-en-casa.jpg);
+   flex-direction: column;
+   justify-content: flex-end;
+   background-position: center;
+   background-size: contain;
+   opacity: 0.5;
+}
+
+
  
