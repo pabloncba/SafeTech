@@ -45,7 +45,18 @@
 
     margin-top: 1rem;
     text-align: center;
+    background-color: #1616173d;
+
+    a {
+        color: #090960;
+        text-decoration: underline;
+    }
  }
+
+.alert-primary {
+    color: #121313;
+    border-color: #eeeff0;
+}
 
 
  /*----bucle----*/

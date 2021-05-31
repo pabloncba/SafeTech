@@ -20,7 +20,8 @@ body {
             background-color: rgba(197, 194, 194, 0.644);}
         }
     
-
+    
+    
 
 
 .contenedor {
@@ -38,9 +39,29 @@ body {
                                 "nav1 nav1 nav1" 
                                 "main main aside"
                                 "footer footer footer";
+                                
 
             justify-items: stretch; 
 
 
                }
                
+.contenedor__sinAside{
+    width: 100%;
+          
+    grid-column-gap: 12px;
+    margin: auto;
+    
+
+    /** grid*/
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: repeat(4,auto);
+    grid-template-areas:"header header header"
+                        "nav1 nav1 nav1" 
+                        "main main main"
+                        "footer footer footer";
+                        
+
+    justify-items: stretch; 
+}

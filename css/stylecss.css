@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*------------------BODY--------------------------*/
 body {
   margin: auto;
@@ -16,6 +17,17 @@ body {
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: repeat(4, auto);
   grid-template-areas: "header header header" "nav1 nav1 nav1"  "main main aside" "footer footer footer";
+  justify-items: stretch; }
+
+.contenedor__sinAside {
+  width: 100%;
+  grid-column-gap: 12px;
+  margin: auto;
+  /** grid*/
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: repeat(4, auto);
+  grid-template-areas: "header header header" "nav1 nav1 nav1"  "main main main" "footer footer footer";
   justify-items: stretch; }
 
 /*-----------------Header-------------------*/
@@ -75,13 +87,16 @@ body {
 main {
   max-width: 1000px;
   border-radius: 10px;
-  background-color: rgba(197, 194, 194, 0.644);
   text-align: justify;
   padding: 0.625rem;
   grid-area: main;
   display: flex;
   flex-direction: column;
-  align-items: center; }
+  align-items: center;
+  background-image: url(../img/control-de-cámaras.jpg);
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover; }
 
 .main__titulos, .main__titulos--h3 {
   text-align: center;
@@ -92,7 +107,7 @@ main {
 
 .main__titulos--h3 {
   font-weight: 600;
-  margin: 18px; }
+  margin: 1.8rem; }
 
 .barraConTelefono {
   display: flex;
@@ -122,18 +137,36 @@ blockquote {
   width: 80px;
   height: 80px;
   border-radius: 100%;
-  border: 1px solid black; }
+  border: 1px solid black;
+  object-fit: cover; }
 
 .index__publicidad {
   display: flex;
   width: 100%;
-  height: 320px;
-  background-image: url(/img/seguridad-en-casa.jpg);
-  flex-direction: column;
-  justify-content: flex-end;
+  height: 60vh;
+  flex-direction: column-reverse;
+  justify-content: space-between;
   background-position: center;
-  background-size: contain;
-  opacity: 0.5; }
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 40px 20px 20px 20px;
+  align-items: center; }
+  .index__publicidad h3 {
+    font-family: 'Titillium Web', sans-serif;
+    font-weight: 800;
+    color: #0c0b0b;
+    font-size: 1.9rem;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 20px; }
+  .index__publicidad p {
+    color: #0c0b0b;
+    font-size: 1.4rem;
+    text-align: center; }
+  .index__publicidad img {
+    width: 100%;
+    max-width: 500px;
+    padding: 10px; }
 
 /*-----------------Formulario------------------*/
 form {
@@ -202,7 +235,7 @@ form {
 /*-----------------aside------------------------*/
 aside {
   border-radius: 10px;
-  background-color: rgba(197, 194, 194, 0.644);
+  background: linear-gradient(90deg, rgba(219, 219, 227, 0.85) 0%, rgba(64, 64, 64, 0.87) 92%);
   text-align: center;
   grid-area: aside; }
   aside h4 {
@@ -290,7 +323,7 @@ aside {
 
 @media (max-width: 600px) {
   body {
-    font-size: 12px; }
+    font-size: 14px; }
   aside {
     display: flex;
     flex-direction: row;
@@ -320,7 +353,9 @@ aside {
     max-width: 250px;
     /*para que no desborde*/ }
   .barraConTelefono__span {
-    font-size: 14px; } }
+    font-size: 14px; }
+  .index__publicidad {
+    font-size: 1rem; } }
 
 /*------------Bootstrap-------------------*/
 /*----------NAVBAR----------------*/
@@ -357,7 +392,15 @@ aside {
 /*----------------alerta bootstrap-----------*/
 .alert {
   margin-top: 1rem;
-  text-align: center; }
+  text-align: center;
+  background-color: #1616173d; }
+  .alert a {
+    color: #090960;
+    text-decoration: underline; }
+
+.alert-primary {
+  color: #121313;
+  border-color: #eeeff0; }
 
 /*----bucle----*/
 .alert--1 {

@@ -1,13 +1,6 @@
 /* Footer */
 
-@mixin footer__img { 
-    display: inline-block;
-    width: 1.5625rem;
-    text-align: right;
-    filter: grayscale( 100%);
-    transition: 0.5s;
-    
-}
+
 
 .footer{
 	border-radius: 10px;
@@ -27,6 +20,15 @@
 		
 
 	}
+}
+
+@mixin footer__img { 
+    display: inline-block;
+    width: 1.5625rem;
+    text-align: right;
+    filter: grayscale( 100%);
+    transition: 0.5s;
+    
 }
 
 .footer__text {
