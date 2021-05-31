@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*------------------BODY--------------------------*/
 body {
   margin: auto;
@@ -15,7 +16,7 @@ body {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: repeat(4, auto);
-  grid-template-areas: "header header header" "nav1 nav1 nav1"  "main main aside" "footer footer footer";
+  grid-template-areas: "header header header" "nav1 nav1 nav1"  "main main aside" "footer footer footer";
   justify-items: stretch; }
 
 .contenedor__sinAside {
@@ -26,7 +27,7 @@ body {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: repeat(4, auto);
-  grid-template-areas: "header header header" "nav1 nav1 nav1"  "main main main" "footer footer footer";
+  grid-template-areas: "header header header" "nav1 nav1 nav1"  "main main main" "footer footer footer";
   justify-items: stretch; }
 
 /*-----------------Header-------------------*/
@@ -92,7 +93,7 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-image: url(../img/control-de-camaras.jpg);
+  background-image: url(../img/control-de-cámaras.jpg);
   background-repeat: no-repeat;
   background-position: top center;
   background-size: cover; }
@@ -306,7 +307,7 @@ aside {
   body {
     font-size: 14px; }
   .contenedor {
-    grid-template-areas: "header header header" "nav1 nav1 nav1"  "main main main" "aside aside aside"  "footer footer footer"; }
+    grid-template-areas: "header header header" "nav1 nav1 nav1"  "main main main" "aside aside aside"  "footer footer footer"; }
   aside {
     grid-template-columns: 1fr 1fr 1fr;
     display: flex;
